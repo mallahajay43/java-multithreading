@@ -63,6 +63,7 @@ public class ThreadMethods {
         });
 
         Thread t3 = new Thread(() -> {
+            // while loop runs untill interruped signal is not received.
             while (!Thread.currentThread().isInterrupted()) {
                 System.out.println("Not interrupted...");
             }
